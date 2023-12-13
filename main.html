@@ -7,7 +7,7 @@
 </head>
 <body>
   <h1 id="head">To Do List</h1>
-  <ul>
+  <ul id="list">
     <li>여행 가기</li>
     <li>코딩 공부</li>
     <li>계절학기로 제주도 여행</li>
@@ -17,14 +17,32 @@
   <style>
     #head{
       text-align:center;
-      color:rgb(248, 245, 179);
+      font-size:5rem;
+      color:#588157;
+    }
+    #list{
+      position:absolute;
+      left:30%;
+      font-size:2rem;
+      line-height:2em;
     }
     @font-face{
       font-family:"nanum";
-      src:url(../toDoList/nanumFont/gothic/NanumFontSetup_OTF_GOTHIC/NanumGothic.otf) format("opentype");
+      src:url(./Y_Clover_FONT/Y_Clover_FONT/otf/YClover-Bold.otf) format("opentype");
+      font-weight: bold;
+      font-style: normal;
     }
-    *{
+    @font-face{
+      font-family:"gothic";
+      src:url(./nanumFont/gothic/NanumFontSetup_OTF_GOTHIC/NanumGothicExtraBold.otf) format("opentype");
+      font-weight: bold;
+      font-style: normal;
+    }
+    #head{
       font-family:"nanum";
+    }
+    #list{
+      font-family:"gothic";
     }
   </style>
 </body>
