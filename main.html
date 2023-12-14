@@ -8,11 +8,11 @@
 <body>
   <h1 id="head">To Do List</h1>
   <ul id="list">
-    <li>부산으로 가족여행 가기</li>
-    <li>코딩 공부</li>
-    <li>계절학기로 제주도 여행</li>
-    <li>영어 공부</li>
-    <li>무빙 보기</li>
+    <li>부산으로 가족여행 가기 <input class="chkbox" type="checkbox" ></li>
+    <li>코딩 공부 <input class="chkbox" type="checkbox"></li>
+    <li>계절학기로 제주도 여행 <input class="chkbox" type="checkbox"></li>
+    <li>영어 공부 <input class="chkbox" type="checkbox"></li>
+    <li>무빙 보기 <input class="chkbox" type="checkbox"></li>
   </ul>
   <style>
     #head{
@@ -50,8 +50,8 @@
     #list li:nth-child(5):before{
       background-color: #a2d2ff;
     }
-    #list li:after{
-      content:"";
+
+    .chkbox{
       display:inline-block;
       position:absolute;
       right:-170px;
@@ -59,7 +59,7 @@
       width:33px;
       height:33px;
       border:3px dotted black;
-
+      background-color: grey;
     }
     @font-face{
       font-family:"nanum";
@@ -80,5 +80,10 @@
       font-family:"gothic";
     }
   </style>
+  <script>
+    function checked(){
+
+    }
+  </script>
 </body>
 </html>
