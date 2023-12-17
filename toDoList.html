@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="head">To Do List</h1>
+  <ul id="list">
+    <li>부산으로 가족여행 가기 <input class="chkbox" type="checkbox" ></li>
+    <li>코딩 공부 <input class="chkbox" type="checkbox"></li>
+    <li>계절학기로 제주도 여행 <input class="chkbox" type="checkbox"></li>
+    <li>영어 공부 <input class="chkbox" type="checkbox"></li>
+    <li>무빙 보기 <input class="chkbox" type="checkbox"></li>
+  </ul>
+  <style>
+    #head{
+      text-align:center;
+      font-size:5rem;
+      color:#588157;
+    }
+    #list{
+      position:absolute;
+      left:30%;
+      font-size:2rem;
+      line-height:2em;
+      list-style: none;
+    }
+    #list li:before{
+      display:inline-block;
+      content:"";
+      width:1.5rem;
+      height:1.5rem;
+      border-radius:50%;
+      margin-right:1rem;
+    }
+    #list li:nth-child(1):before{
+      background-color: #cdb4db;
+    }
+    #list li:nth-child(2):before{
+      background-color: #ffc8dd;
+    }
+    #list li:nth-child(3):before{
+      background-color: #ffafcc;
+    }
+    #list li:nth-child(4):before{
+      background-color: #bde0fe;
+    }
+    #list li:nth-child(5):before{
+      background-color: #a2d2ff;
+    }
+
+    .chkbox{
+      display:inline-block;
+      position:absolute;
+      right:-170px;
+      margin-top:12px;
+      width:33px;
+      height:33px;
+      border:3px dotted black;
+      background-color: grey;
+    }
+    @font-face{
+      font-family:"nanum";
+      src:url(./Y_Clover_FONT/Y_Clover_FONT/otf/YClover-Bold.otf) format("opentype");
+      font-weight: bold;
+      font-style: normal;
+    }
+    @font-face{
+      font-family:"gothic";
+      src:url(./nanumFont/gothic/NanumFontSetup_OTF_GOTHIC/NanumGothicExtraBold.otf) format("opentype");
+      font-weight: bold;
+      font-style: normal;
+    }
+    #head{
+      font-family:"nanum";
+    }
+    #list{
+      font-family:"gothic";
+    }
+  </style>
+  <script>
+    function checked(){
+
+    }
+  </script>
+</body>
+</html>
